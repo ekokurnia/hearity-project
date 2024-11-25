@@ -105,13 +105,14 @@ fun Header(modifier: Modifier = Modifier) {
         Text(
             "HeaRity Bot",
             style = MaterialTheme.typography.titleLarge,
+            color = MaterialTheme.colorScheme.onSurface,
             fontWeight = FontWeight.Bold
         )
 
         TextButton(
             onClick = {}
         ) {
-            Text("Clear Chats")
+            Text("Clear Chats", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
             Spacer(Modifier.width(SpacingItem))
             Icon(imageVector = Icons.Outlined.DeleteOutline, contentDescription = "Add")
         }
