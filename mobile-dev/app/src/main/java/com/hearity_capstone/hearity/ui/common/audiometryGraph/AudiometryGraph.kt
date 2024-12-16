@@ -137,10 +137,11 @@ fun AudiometryGraph(
                     )
                     Spacer(Modifier.width(SpacingSmall))
                     Text(
-                        testResult?.date?.value.toString(),
+                        text = testResult?.date?.toString() ?: "No Data",
                         style = MaterialTheme.typography.labelSmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
+
                 }
             }
             EarDropdown(
